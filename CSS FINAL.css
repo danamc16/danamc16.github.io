@@ -1,0 +1,27 @@
+body {
+  background-image:url("http://toledocampusministry.org/wp-content/uploads/2012/06/blue-pattern-twitter-background.jpg");
+}
+H1 {
+		Font-family: Helvetica;
+		Font-size: 30px;
+		Color:white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+H2 {
+		Font-family: Helvetica;
+		Font-size: 20px;
+		Color:white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+H3 {
+		Font-family: Helvetica;
+		Font-size: 16px;
+		Color:white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+H4 {
+		Font-family: Helvetica;
+		Font-size: 16px;
+		Color:white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
