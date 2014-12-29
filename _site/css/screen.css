@@ -85,12 +85,49 @@ html {
   box-sizing: inherit;
 }
 
-/* line 41, ../_sass/components/_typography.scss */
+/* line 6, ../_sass/components/_typography.scss */
+h1.page-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 3em;
+  padding: 1.5em;
+}
+
+/* line 15, ../_sass/components/_typography.scss */
+nav .nav-name {
+  font-size: 1.5em;
+}
+/* line 18, ../_sass/components/_typography.scss */
+nav .nav-links li {
+  font-size: 1.5em;
+}
+
+/* line 59, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 43, ../_sass/components/_typography.scss */
+/* line 61, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
+}
+
+/* line 1, ../_sass/components/_navbar.scss */
+.nav-name {
+  float: left;
+  display: inline-block;
+  padding: 1em;
+}
+
+/* line 7, ../_sass/components/_navbar.scss */
+.nav-primary {
+  float: right;
+  position: relative;
+  width: 100%;
+}
+/* line 11, ../_sass/components/_navbar.scss */
+.nav-primary li {
+  float: right;
+  display: inline-block;
+  padding: 1em;
 }

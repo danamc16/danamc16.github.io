@@ -3,6 +3,24 @@
 
 // body { font-family: $primary-font, sans-serif; }
 
+h1.page-title {
+	text-align:center;
+	font-weight: 300;
+	font-size: 3em;
+	padding: 1.5em;
+}
+
+// Text for Navigation Bar
+nav {
+	.nav-name {
+		font-size:1.5em;
+	}
+	.nav-links li {
+		font-size: 1.5em;
+	}	
+}
+
+
 // h1, h2, h3, h4, h5, h6 {
 // 	color: blue;
 // 	font-weight: 600;
