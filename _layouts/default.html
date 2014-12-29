@@ -3,10 +3,14 @@
 
 {% include head.html %}
 
-     {% include nav.html %}
-
+    {% include nav.html %}
+	
+	{% if "/" == page.url %}
+	<h1 class="page-title">Catchy Phrase Here</h1>
+	{% else %}
      <h1 class="page-title">{{ page.author }}</h1>
-
+	{% endif %}
+	
     {{ content }}
 
 {% include foot.html %}
