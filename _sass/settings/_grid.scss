@@ -1,0 +1,15 @@
+@import "../neat/neat-helpers"; // or "neat-helpers" when in Rails
+
+// Neat's Grid Variables
+
+$max-width: 940px;
+$grid-columns: 6;
+
+// Define your breakpoints
+$absurd: new-breakpoint(min-width 93.750em 12);
+$larger: new-breakpoint(min-width 72.500em 12);
+$home-mast-desktop: new-breakpoint(min-width 82.5em 12);
+$desktop: new-breakpoint(min-width 58em 12);
+$rowpadd-desktop: new-breakpoint(min-width 60em 12);
+$home-mast-tablet: new-breakpoint(min-width 48em 12);
+$tablet: new-breakpoint(min-width 35.500em 12);

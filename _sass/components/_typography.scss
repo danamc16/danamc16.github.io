@@ -1,0 +1,43 @@
+@import "settings/grid";
+@import "settings/typography";
+
+// body { font-family: $primary-font, sans-serif; }
+
+// h1, h2, h3, h4, h5, h6 {
+// 	color: blue;
+// 	font-weight: 600;
+// 	font-style: italic;
+// 	line-height: 1.35;
+// }
+
+// h1 {
+// 	font-size: $mobile-h1-font-size;
+// 	padding-bottom: 1rem;
+
+// 	@include media($tablet) {
+// 		font-size: $h1-font-size;
+// 	}
+// }
+
+// h2 {
+// 	font-size: $mobile-h2-font-size;
+// 	margin-bottom: 20px;
+// 	@include media($tablet) {
+// 		font-size: $h2-font-size;
+// 	}
+// }
+
+// p {
+// 	font-family: $copy-font;
+// 	font-size: $mobile-main-font-size;
+// 	color: $dark-copy-color;
+// 	line-height: 1.824375em;
+// 	margin-bottom: 30px;
+// 	@include media($tablet) {
+// 		font-size: $main-font-size;
+// 	}
+// }
+
+a { text-decoration: none; }
+
+i { font-style: italic; }
