@@ -1,0 +1,9 @@
+name: ""
+description: ""
+
+url: "danamc16.github.io"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
