@@ -1,13 +1,12 @@
  <!-- SCSS, baby -->
 <link rel="stylesheet" href="/css/screen.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 {% include head.html %}
 
     {% include nav.html %}
 	
-	{% if "/" == page.url %}
-	<h1 class="page-title">Catchy Phrase Here</h1>
-	{% else %}
+	{% if "/" != page.url %}
      <h1 class="page-title">{{ page.author }}</h1>
 	{% endif %}
 	

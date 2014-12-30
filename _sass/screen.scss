@@ -19,3 +19,11 @@
 @import "pages/home";
 @import "pages/resume";
 @import "pages/contact";
+
+body {
+	background: url('/img/highline.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

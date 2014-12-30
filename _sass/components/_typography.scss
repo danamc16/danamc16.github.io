@@ -6,13 +6,17 @@
 h1.page-title {
 	text-align:center;
 	font-weight: 300;
-	font-size: 3em; 	
+	font-size: 4em; 	
 	width:100%;
 	padding-top:2em;
+	padding-bottom:1em;
+	color:white;
+	text-shadow: 1px 1px 1px black;
 }
 
 // Text for Navigation Bar
 nav {
+	font-family: $primary-font;	
 	.nav-name {
 		font-size:1.5em;
 	}
@@ -24,12 +28,14 @@ nav {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
-	line-height: 1.35;	
+	line-height: 1.35;
+	font-family: $primary-font;	
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	padding-bottom: 1rem;
+	letter-spacing: .05em;
 
 	// @include media($tablet) {
 	// 	font-size: $h1-font-size;
@@ -37,8 +43,9 @@ h1 {
 }
 
 h2 {
-	font-size: 1.4em;
+	font-size: 1.75em;
 	margin-bottom: 20px;
+	letter-spacing: .05em;
 	// @include media($tablet) {
 	// 	font-size: $h2-font-size;
 	// }
@@ -48,6 +55,7 @@ p {
 	line-height: 1.824375em;
 	margin-bottom: 20px;
 	text-align: justify;
+	font-family: $primary-font;
 	// @include media($tablet) {
 	// 	font-size: $main-font-size;
 	// }

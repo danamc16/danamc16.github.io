@@ -1,3 +1,20 @@
 .contact {
 	@include outer-container;
+	background-color: $backdrop;
+	padding: 3em;
+	h1 {
+		padding: .5em;
+		margin: 0 auto;
+		text-align:justify;
+		width: 80%;
+	}
+	.info {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 1em;
+		p {
+			text-align:center;
+		}
+	}
 }

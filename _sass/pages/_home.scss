@@ -1,0 +1,17 @@
+.aboutme {
+	@include outer-container;
+	padding: 3em;
+	background-color: $backdrop;
+	h1 {
+		text-align: center;
+		padding: .5em;
+		margin: 0 auto;	
+		width: 90%
+	}
+	p {
+		text-align: justify;
+		width: 75%;
+		margin: 0 auto;
+		padding: 1em;
+	}
+}
