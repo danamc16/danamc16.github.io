@@ -1,0 +1,13 @@
+section.portfolio {
+	@include outer-container;
+	padding: 2em;
+	background-color: $backdrop;
+	.portfolio-row {
+		@include fill-parent();
+		@include row(table);
+		.column-6 {
+			@include span-columns(6);
+			@include pad();
+		}
+	}
+}

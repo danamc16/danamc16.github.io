@@ -91,8 +91,8 @@ h1.page-title {
   font-weight: 300;
   font-size: 4em;
   width: 100%;
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -103,11 +103,11 @@ nav {
 }
 /* line 20, ../_sass/components/_typography.scss */
 nav .nav-name {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /* line 23, ../_sass/components/_typography.scss */
 nav .nav-links li {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 /* line 29, ../_sass/components/_typography.scss */
@@ -163,7 +163,7 @@ i {
 .nav-name {
   float: left;
   display: inline-block;
-  padding: 1em;
+  padding: .5em;
   letter-spacing: .05em;
 }
 
@@ -182,8 +182,9 @@ i {
   float: right;
   display: inline-block;
   padding: 1em;
+  margin-right: .75em;
 }
-/* line 26, ../_sass/components/_navbar.scss */
+/* line 27, ../_sass/components/_navbar.scss */
 .nav-primary li :visited {
   color: black;
 }
@@ -223,7 +224,6 @@ section.experience {
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
-  margin-bottom: 2em;
   background-color: rgba(255, 255, 255, 0.8);
 }
 /* line 15, ../_sass/bourbon/addons/_clearfix.scss */
@@ -232,38 +232,66 @@ section.experience:after {
   display: table;
   clear: both;
 }
-/* line 6, ../_sass/pages/_resume.scss */
+/* line 5, ../_sass/pages/_resume.scss */
 section.experience .experience-row {
   width: 100%;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 9, ../_sass/pages/_resume.scss */
+/* line 8, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4 {
   display: table-cell;
   width: 33.33333%;
   padding: 2.35765%;
 }
-/* line 13, ../_sass/pages/_resume.scss */
+/* line 12, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills {
   display: table-cell;
   width: 100%;
   padding: 2.35765%;
 }
-/* line 16, ../_sass/pages/_resume.scss */
+/* line 15, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 20, ../_sass/pages/_resume.scss */
+/* line 19, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills li {
   line-height: 1.824375em;
   padding-left: 3em;
   font-family: "Lato", sans-serif;
 }
-/* line 26, ../_sass/pages/_resume.scss */
+/* line 25, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-8 {
+  display: table-cell;
+  width: 100%;
+  padding: 2.35765%;
+}
+
+/* line 1, ../_sass/pages/_portfolio.scss */
+section.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+section.portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 8, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 {
   display: table-cell;
   width: 100%;
   padding: 2.35765%;
@@ -302,7 +330,7 @@ section.experience .experience-row .column-8 {
   text-align: center;
 }
 
-/* line 23, ../_sass/screen.scss */
+/* line 24, ../_sass/screen.scss */
 body {
   background: url("/img/highline.png") no-repeat center center fixed;
   -webkit-background-size: cover;
