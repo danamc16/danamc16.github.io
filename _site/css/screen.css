@@ -274,7 +274,7 @@ section.portfolio {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
+  padding: 3em;
   background-color: rgba(255, 255, 255, 0.8);
 }
 /* line 15, ../_sass/bourbon/addons/_clearfix.scss */
@@ -294,7 +294,21 @@ section.portfolio .portfolio-row {
 section.portfolio .portfolio-row .column-6 {
   display: table-cell;
   width: 100%;
-  padding: 2.35765%;
+  padding: 1em;
+}
+/* line 11, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 25em;
+}
+/* line 15, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../_sass/pages/_contact.scss */
@@ -330,7 +344,7 @@ section.portfolio .portfolio-row .column-6 {
   text-align: center;
 }
 
-/* line 24, ../_sass/screen.scss */
+/* line 25, ../_sass/screen.scss */
 body {
   background: url("/img/highline.png") no-repeat center center fixed;
   -webkit-background-size: cover;
