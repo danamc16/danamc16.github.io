@@ -94,7 +94,7 @@ h1.page-title {
   padding-top: 1.5em;
   padding-bottom: .5em;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 /* line 18, ../_sass/components/_typography.scss */
@@ -110,28 +110,41 @@ nav .nav-links li {
   font-size: 1.25em;
 }
 
-/* line 29, ../_sass/components/_typography.scss */
+/* line 30, ../_sass/components/_typography.scss */
+span {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+  color: white;
+}
+
+/* line 36, ../_sass/components/_typography.scss */
+.img-title {
+  font-size: 3em !important;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* line 42, ../_sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.35;
   font-family: "Lato", sans-serif;
 }
 
-/* line 35, ../_sass/components/_typography.scss */
+/* line 48, ../_sass/components/_typography.scss */
 h1 {
   font-size: 2em;
   padding-bottom: 1rem;
   letter-spacing: .05em;
 }
 
-/* line 45, ../_sass/components/_typography.scss */
+/* line 58, ../_sass/components/_typography.scss */
 h2 {
   font-size: 1.75em;
   margin-bottom: 20px;
   letter-spacing: .05em;
 }
 
-/* line 54, ../_sass/components/_typography.scss */
+/* line 67, ../_sass/components/_typography.scss */
 p {
   line-height: 1.824375em;
   margin-bottom: 20px;
@@ -139,12 +152,12 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-/* line 64, ../_sass/components/_typography.scss */
+/* line 77, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 66, ../_sass/components/_typography.scss */
+/* line 79, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
 }
@@ -295,20 +308,46 @@ section.portfolio .portfolio-row .column-6 {
   display: table-cell;
   width: 100%;
   padding: 1em;
+  position: relative;
 }
-/* line 11, ../_sass/pages/_portfolio.scss */
+/* line 12, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container {
   overflow: hidden;
   position: relative;
   height: 25em;
+  background-color: gray;
 }
-/* line 15, ../_sass/pages/_portfolio.scss */
+/* line 17, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container img {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+/* line 25, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container .img-title {
+  -webkit-transform: translateY(3.5em);
+  -moz-transform: translateY(3.5em);
+  -ms-transform: translateY(3.5em);
+  -o-transform: translateY(3.5em);
+  transform: translateY(3.5em);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 32, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container .img-description {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  bottom: 0em;
+  text-align: right;
 }
 
 /* line 1, ../_sass/pages/_contact.scss */
