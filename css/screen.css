@@ -122,29 +122,40 @@ span {
   font-size: 3em !important;
   text-shadow: 2px 2px 2px black;
 }
+/* line 39, ../_sass/components/_typography.scss */
+.img-title p {
+  -webkit-transform: translateY(-0.5em);
+  -moz-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  -o-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+  font-size: .5em;
+  text-align: center;
+  z-index: 100;
+}
 
-/* line 42, ../_sass/components/_typography.scss */
+/* line 48, ../_sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.35;
   font-family: "Lato", sans-serif;
 }
 
-/* line 48, ../_sass/components/_typography.scss */
+/* line 54, ../_sass/components/_typography.scss */
 h1 {
   font-size: 2em;
   padding-bottom: 1rem;
   letter-spacing: .05em;
 }
 
-/* line 58, ../_sass/components/_typography.scss */
+/* line 64, ../_sass/components/_typography.scss */
 h2 {
   font-size: 1.75em;
   margin-bottom: 20px;
   letter-spacing: .05em;
 }
 
-/* line 67, ../_sass/components/_typography.scss */
+/* line 73, ../_sass/components/_typography.scss */
 p {
   line-height: 1.824375em;
   margin-bottom: 20px;
@@ -152,12 +163,12 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-/* line 77, ../_sass/components/_typography.scss */
+/* line 83, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 79, ../_sass/components/_typography.scss */
+/* line 85, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
 }
@@ -350,6 +361,70 @@ section.portfolio .portfolio-row .column-6 .img-container .img-description {
   text-align: right;
 }
 
+/* line 1, ../_sass/pages/_projects.scss */
+article.project {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+article.project:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../_sass/pages/_projects.scss */
+article.project section {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 8, ../_sass/pages/_projects.scss */
+article.project section .column-12 {
+  display: table-cell;
+  width: 200%;
+  padding: 2.35765%;
+  position: relative;
+}
+/* line 12, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 15em;
+  background-color: gray;
+}
+/* line 17, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 26, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container .img-title {
+  -webkit-transform: translateY(3em);
+  -moz-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  -o-transform: translateY(3em);
+  transform: translateY(3em);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 37, ../_sass/pages/_projects.scss */
+article.project section.info {
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 1em;
+  text-align: justify;
+}
+
 /* line 1, ../_sass/pages/_contact.scss */
 .contact {
   max-width: 940px;
@@ -383,7 +458,7 @@ section.portfolio .portfolio-row .column-6 .img-container .img-description {
   text-align: center;
 }
 
-/* line 25, ../_sass/screen.scss */
+/* line 26, ../_sass/screen.scss */
 body {
   background: url("/img/highline.png") no-repeat center center fixed;
   -webkit-background-size: cover;

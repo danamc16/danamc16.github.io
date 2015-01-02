@@ -1,0 +1,43 @@
+article.project {
+	@include outer-container;
+	background-color: $backdrop;
+	padding: 2em;
+	section {
+		@include fill-parent();
+		@include row(table);
+		.column-12 {
+			@include span-columns(12);
+			@include pad();
+			position:relative;
+			.img-container {
+				overflow:hidden;
+				position: relative;
+				height: 15em;
+				background-color: gray;
+				img {
+					position: absolute;
+					top: 100%;
+				    left: 50%;
+				    width: 100%;
+				    margin-right: -50%;
+				    transform: translate(-50%, -50%);
+
+				}
+				.img-title {
+					@include transform(translateY(3em));
+					z-index: 100;
+					position: absolute;
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+
+	}
+	section.info {
+		padding-right: 3em;
+		padding-left: 3em;
+		padding-top: 1em;
+		text-align: justify;	
+	}
+}
