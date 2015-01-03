@@ -35,6 +35,9 @@ section.portfolio {
 				#ycreate {
 					top:45%;
 				}
+				#thoracostomy {
+					left: 110%;
+				}
 				.img-title {
 					@include transform(translateY(3.5em));
 					z-index: 100;
@@ -43,7 +46,9 @@ section.portfolio {
 					text-align: center;
 				}
 				.img-description {
-					@include linear-gradient(rgba(0,0,0,0),  rgba(0,0,0,.75));
+					@include linear-gradient(rgba(0,0,0,0),  rgba(0,0,0,1));
+					@include transform(translateY(5em));
+					@include transition(all 0.5s ease-out);
 					z-index: 100;
 					position: absolute;
 					width: 100%;
@@ -52,7 +57,10 @@ section.portfolio {
 					text-align: right;				
 				}	
 			}
-			
+			.img-container:hover .img-description {
+				@include transform(translateY(0em));
+				@include transition(all 0.5s ease-out);
+			}
 		}
 	}
 }
