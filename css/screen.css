@@ -156,6 +156,11 @@ h2 {
 }
 
 /* line 73, ../_sass/components/_typography.scss */
+h3 {
+  margin-bottom: 5px;
+}
+
+/* line 77, ../_sass/components/_typography.scss */
 p {
   line-height: 1.824375em;
   margin-bottom: 20px;
@@ -163,12 +168,12 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-/* line 83, ../_sass/components/_typography.scss */
+/* line 87, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 85, ../_sass/components/_typography.scss */
+/* line 89, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
 }
@@ -213,7 +218,21 @@ i {
   color: black;
 }
 
+/* line 1, ../_sass/components/_footer.scss */
+.footer {
+  height: 4em;
+}
+
 /* line 1, ../_sass/pages/_home.scss */
+.body-home {
+  background: url("/img/highline.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_home.scss */
 .aboutme {
   max-width: 940px;
   margin-left: auto;
@@ -227,14 +246,14 @@ i {
   display: table;
   clear: both;
 }
-/* line 5, ../_sass/pages/_home.scss */
+/* line 13, ../_sass/pages/_home.scss */
 .aboutme h1 {
   text-align: center;
   padding: .5em;
   margin: 0 auto;
   width: 90%;
 }
-/* line 11, ../_sass/pages/_home.scss */
+/* line 19, ../_sass/pages/_home.scss */
 .aboutme p {
   text-align: justify;
   width: 75%;
@@ -243,6 +262,15 @@ i {
 }
 
 /* line 1, ../_sass/pages/_resume.scss */
+.body-resume {
+  background: url("/img/highline.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_resume.scss */
 section.experience {
   max-width: 940px;
   margin-left: auto;
@@ -256,37 +284,37 @@ section.experience:after {
   display: table;
   clear: both;
 }
-/* line 5, ../_sass/pages/_resume.scss */
+/* line 13, ../_sass/pages/_resume.scss */
 section.experience .experience-row {
   width: 100%;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 8, ../_sass/pages/_resume.scss */
+/* line 16, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4 {
   display: table-cell;
   width: 33.33333%;
   padding: 2.35765%;
 }
-/* line 12, ../_sass/pages/_resume.scss */
+/* line 20, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills {
   display: table-cell;
   width: 100%;
   padding: 2.35765%;
 }
-/* line 15, ../_sass/pages/_resume.scss */
+/* line 23, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 19, ../_sass/pages/_resume.scss */
+/* line 27, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills li {
   line-height: 1.824375em;
   padding-left: 3em;
   font-family: "Lato", sans-serif;
 }
-/* line 25, ../_sass/pages/_resume.scss */
+/* line 33, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-8 {
   display: table-cell;
   width: 100%;
@@ -294,6 +322,15 @@ section.experience .experience-row .column-8 {
 }
 
 /* line 1, ../_sass/pages/_portfolio.scss */
+.body-portfolio {
+  background: url("/img/ceid.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_portfolio.scss */
 section.portfolio {
   max-width: 940px;
   margin-left: auto;
@@ -307,28 +344,28 @@ section.portfolio:after {
   display: table;
   clear: both;
 }
-/* line 5, ../_sass/pages/_portfolio.scss */
+/* line 13, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row {
   width: 100%;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 8, ../_sass/pages/_portfolio.scss */
+/* line 16, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 {
   display: table-cell;
   width: 100%;
   padding: 1em;
   position: relative;
 }
-/* line 12, ../_sass/pages/_portfolio.scss */
+/* line 20, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container {
   overflow: hidden;
   position: relative;
   height: 25em;
   background-color: gray;
 }
-/* line 17, ../_sass/pages/_portfolio.scss */
+/* line 25, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container img {
   position: absolute;
   top: 50%;
@@ -336,7 +373,15 @@ section.portfolio .portfolio-row .column-6 .img-container img {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-/* line 25, ../_sass/pages/_portfolio.scss */
+/* line 32, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container #aerospace {
+  left: 150%;
+}
+/* line 35, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container #ycreate {
+  top: 45%;
+}
+/* line 38, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container .img-title {
   -webkit-transform: translateY(3.5em);
   -moz-transform: translateY(3.5em);
@@ -348,7 +393,7 @@ section.portfolio .portfolio-row .column-6 .img-container .img-title {
   width: 100%;
   text-align: center;
 }
-/* line 32, ../_sass/pages/_portfolio.scss */
+/* line 45, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-6 .img-container .img-description {
   background-color: transparent;
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.75));
@@ -426,6 +471,15 @@ article.project section.info {
 }
 
 /* line 1, ../_sass/pages/_contact.scss */
+.body-contact {
+  background: url("/img/highline.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_contact.scss */
 .contact {
   max-width: 940px;
   margin-left: auto;
@@ -439,30 +493,21 @@ article.project section.info {
   display: table;
   clear: both;
 }
-/* line 5, ../_sass/pages/_contact.scss */
+/* line 13, ../_sass/pages/_contact.scss */
 .contact h1 {
   padding: .5em;
   margin: 0 auto;
   text-align: justify;
   width: 80%;
 }
-/* line 11, ../_sass/pages/_contact.scss */
+/* line 19, ../_sass/pages/_contact.scss */
 .contact .info {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   padding: 1em;
 }
-/* line 16, ../_sass/pages/_contact.scss */
+/* line 24, ../_sass/pages/_contact.scss */
 .contact .info p {
   text-align: center;
-}
-
-/* line 26, ../_sass/screen.scss */
-body {
-  background: url("/img/highline.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }

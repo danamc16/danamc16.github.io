@@ -15,6 +15,7 @@
 // Components
 @import "components/typography";
 @import "components/navbar";
+@import "components/footer";
 
 // Pages
 @import "pages/home";
@@ -22,11 +23,3 @@
 @import "pages/portfolio";
 @import "pages/projects";
 @import "pages/contact";
-
-body {
-	background: url('/img/highline.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}

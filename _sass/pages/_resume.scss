@@ -1,3 +1,11 @@
+.body-resume {
+	background: url('/img/highline.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 section.experience {
 	@include outer-container;
 	padding: 2em;

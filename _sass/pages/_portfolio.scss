@@ -1,3 +1,11 @@
+.body-portfolio {
+	background: url('/img/ceid.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 section.portfolio {
 	@include outer-container;
 	padding: 3em;
@@ -20,7 +28,12 @@ section.portfolio {
 				    left: 50%;
 				    margin-right: -50%;
 				    transform: translate(-50%, -50%);
-
+				}
+				#aerospace {
+					left:150%;
+				}
+				#ycreate {
+					top:45%;
 				}
 				.img-title {
 					@include transform(translateY(3.5em));
