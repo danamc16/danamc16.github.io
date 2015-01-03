@@ -91,10 +91,10 @@ h1.page-title {
   font-weight: 300;
   font-size: 4em;
   width: 100%;
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 /* line 18, ../_sass/components/_typography.scss */
@@ -103,35 +103,59 @@ nav {
 }
 /* line 20, ../_sass/components/_typography.scss */
 nav .nav-name {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /* line 23, ../_sass/components/_typography.scss */
 nav .nav-links li {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
-/* line 29, ../_sass/components/_typography.scss */
+/* line 30, ../_sass/components/_typography.scss */
+span {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+  color: white;
+}
+
+/* line 36, ../_sass/components/_typography.scss */
+.img-title {
+  font-size: 3em !important;
+  text-shadow: 2px 2px 2px black;
+}
+/* line 39, ../_sass/components/_typography.scss */
+.img-title p {
+  -webkit-transform: translateY(-0.5em);
+  -moz-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  -o-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+  font-size: .5em;
+  text-align: center;
+  z-index: 100;
+}
+
+/* line 48, ../_sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.35;
   font-family: "Lato", sans-serif;
 }
 
-/* line 35, ../_sass/components/_typography.scss */
+/* line 54, ../_sass/components/_typography.scss */
 h1 {
   font-size: 2em;
   padding-bottom: 1rem;
   letter-spacing: .05em;
 }
 
-/* line 45, ../_sass/components/_typography.scss */
+/* line 64, ../_sass/components/_typography.scss */
 h2 {
   font-size: 1.75em;
   margin-bottom: 20px;
   letter-spacing: .05em;
 }
 
-/* line 54, ../_sass/components/_typography.scss */
+/* line 73, ../_sass/components/_typography.scss */
 p {
   line-height: 1.824375em;
   margin-bottom: 20px;
@@ -139,12 +163,12 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-/* line 64, ../_sass/components/_typography.scss */
+/* line 83, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 66, ../_sass/components/_typography.scss */
+/* line 85, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
 }
@@ -163,7 +187,7 @@ i {
 .nav-name {
   float: left;
   display: inline-block;
-  padding: 1em;
+  padding: .5em;
   letter-spacing: .05em;
 }
 
@@ -182,8 +206,9 @@ i {
   float: right;
   display: inline-block;
   padding: 1em;
+  margin-right: .75em;
 }
-/* line 26, ../_sass/components/_navbar.scss */
+/* line 27, ../_sass/components/_navbar.scss */
 .nav-primary li :visited {
   color: black;
 }
@@ -223,7 +248,6 @@ section.experience {
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
-  margin-bottom: 2em;
   background-color: rgba(255, 255, 255, 0.8);
 }
 /* line 15, ../_sass/bourbon/addons/_clearfix.scss */
@@ -232,41 +256,173 @@ section.experience:after {
   display: table;
   clear: both;
 }
-/* line 6, ../_sass/pages/_resume.scss */
+/* line 5, ../_sass/pages/_resume.scss */
 section.experience .experience-row {
   width: 100%;
   display: table;
   width: 100%;
   table-layout: fixed;
 }
-/* line 9, ../_sass/pages/_resume.scss */
+/* line 8, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4 {
   display: table-cell;
   width: 33.33333%;
   padding: 2.35765%;
 }
-/* line 13, ../_sass/pages/_resume.scss */
+/* line 12, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills {
   display: table-cell;
   width: 100%;
   padding: 2.35765%;
 }
-/* line 16, ../_sass/pages/_resume.scss */
+/* line 15, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 20, ../_sass/pages/_resume.scss */
+/* line 19, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-4-skills li {
   line-height: 1.824375em;
   padding-left: 3em;
   font-family: "Lato", sans-serif;
 }
-/* line 26, ../_sass/pages/_resume.scss */
+/* line 25, ../_sass/pages/_resume.scss */
 section.experience .experience-row .column-8 {
   display: table-cell;
   width: 100%;
   padding: 2.35765%;
+}
+
+/* line 1, ../_sass/pages/_portfolio.scss */
+section.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+section.portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 8, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 {
+  display: table-cell;
+  width: 100%;
+  padding: 1em;
+  position: relative;
+}
+/* line 12, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 25em;
+  background-color: gray;
+}
+/* line 17, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 25, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container .img-title {
+  -webkit-transform: translateY(3.5em);
+  -moz-transform: translateY(3.5em);
+  -ms-transform: translateY(3.5em);
+  -o-transform: translateY(3.5em);
+  transform: translateY(3.5em);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 32, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-6 .img-container .img-description {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  bottom: 0em;
+  text-align: right;
+}
+
+/* line 1, ../_sass/pages/_projects.scss */
+article.project {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+article.project:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../_sass/pages/_projects.scss */
+article.project section {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 8, ../_sass/pages/_projects.scss */
+article.project section .column-12 {
+  display: table-cell;
+  width: 200%;
+  padding: 2.35765%;
+  position: relative;
+}
+/* line 12, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 15em;
+  background-color: gray;
+}
+/* line 17, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 26, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container .img-title {
+  -webkit-transform: translateY(3em);
+  -moz-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  -o-transform: translateY(3em);
+  transform: translateY(3em);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 37, ../_sass/pages/_projects.scss */
+article.project section.info {
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 1em;
+  text-align: justify;
 }
 
 /* line 1, ../_sass/pages/_contact.scss */
@@ -302,7 +458,7 @@ section.experience .experience-row .column-8 {
   text-align: center;
 }
 
-/* line 23, ../_sass/screen.scss */
+/* line 26, ../_sass/screen.scss */
 body {
   background: url("/img/highline.png") no-repeat center center fixed;
   -webkit-background-size: cover;

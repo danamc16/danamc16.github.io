@@ -10,7 +10,7 @@
 .nav-name {
 	float:left;
 	display: inline-block;
-	padding: 1em;
+	padding: .5em;
 	letter-spacing: .05em;
 }
 
@@ -23,6 +23,7 @@
 		float: right;
 		display: inline-block;
 		padding: 1em;
+		margin-right: .75em;
 		:visited {
 			color:black;
 		}

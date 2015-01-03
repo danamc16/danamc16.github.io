@@ -8,21 +8,40 @@ h1.page-title {
 	font-weight: 300;
 	font-size: 4em; 	
 	width:100%;
-	padding-top:2em;
-	padding-bottom:1em;
+	padding-top:1.5em;
+	padding-bottom:.5em;
 	color:white;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: $default-shadow;
 }
 
 // Text for Navigation Bar
 nav {
 	font-family: $primary-font;	
 	.nav-name {
-		font-size:1.5em;
+		font-size:2em;
 	}
 	.nav-links li {
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}	
+}
+
+// Text for Portfolio Squares
+
+span {
+	font-family: $primary-font;
+	font-size: 1.25em;	
+	color: white;
+}
+
+.img-title {
+	font-size: 3em !important;
+	text-shadow: $default-shadow;
+	p {
+		@include transform(translateY(-.5em));
+		font-size:.5em;
+		text-align: center;
+		z-index: 100;
+	}
 }
 
 
