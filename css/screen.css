@@ -119,7 +119,7 @@ span {
 
 /* line 36, ../_sass/components/_typography.scss */
 .img-title {
-  font-size: 3em !important;
+  font-size: 2.5em !important;
   text-shadow: 2px 2px 2px black;
 }
 /* line 39, ../_sass/components/_typography.scss */
@@ -263,7 +263,7 @@ i {
 
 /* line 1, ../_sass/pages/_resume.scss */
 .body-resume {
-  background: url("/img/highline.png") no-repeat center center fixed;
+  background: url("/img/yale.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -352,61 +352,70 @@ section.portfolio .portfolio-row {
   table-layout: fixed;
 }
 /* line 16, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 {
+section.portfolio .portfolio-row .column-1 {
   display: table-cell;
-  width: 100%;
+  width: 16.66667%;
+}
+/* line 19, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 {
+  display: table-cell;
+  width: 66.66667%;
   padding: 1em;
   position: relative;
 }
-/* line 20, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container {
+/* line 23, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container {
   overflow: hidden;
   position: relative;
-  height: 25em;
-  background-color: gray;
+  height: 20em;
+  margin: 0 auto;
+  background-color: black;
 }
-/* line 25, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container img {
+/* line 29, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container img {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-/* line 32, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container #aerospace {
+/* line 37, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #aerospace {
   left: 150%;
 }
-/* line 35, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container #ycreate {
+/* line 40, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #ycreate {
   top: 45%;
 }
-/* line 38, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container #thoracostomy {
+/* line 43, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #thoracostomy {
   left: 110%;
 }
-/* line 41, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container .img-title {
-  -webkit-transform: translateY(3.5em);
-  -moz-transform: translateY(3.5em);
-  -ms-transform: translateY(3.5em);
-  -o-transform: translateY(3.5em);
-  transform: translateY(3.5em);
+/* line 46, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container .img-title {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateY(3em);
+  -moz-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  -o-transform: translateY(3em);
+  transform: translateY(3em);
   z-index: 100;
   position: absolute;
   width: 100%;
   text-align: center;
 }
-/* line 48, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container .img-description {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(transparent, black);
-  background-image: linear-gradient(transparent, black);
-  -webkit-transform: translateY(5em);
-  -moz-transform: translateY(5em);
-  -ms-transform: translateY(5em);
-  -o-transform: translateY(5em);
-  transform: translateY(5em);
+/* line 54, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container .img-description {
+  -webkit-transform: translateY(6em);
+  -moz-transform: translateY(6em);
+  -ms-transform: translateY(6em);
+  -o-transform: translateY(6em);
+  transform: translateY(6em);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -417,16 +426,30 @@ section.portfolio .portfolio-row .column-6 .img-container .img-description {
   bottom: 0em;
   text-align: right;
 }
-/* line 60, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-6 .img-container:hover .img-description {
-  -webkit-transform: translateY(0em);
-  -moz-transform: translateY(0em);
-  -ms-transform: translateY(0em);
-  -o-transform: translateY(0em);
-  transform: translateY(0em);
+/* line 66, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  opacity: .4;
+}
+/* line 70, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover .img-title {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: .7;
+}
+/* line 74, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateY(0.25em);
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -o-transform: translateY(0.25em);
+  transform: translateY(0.25em);
 }
 
 /* line 1, ../_sass/pages/_projects.scss */
@@ -487,11 +510,11 @@ article.project section .column-12 .img-container #thoracostomy {
 }
 /* line 35, ../_sass/pages/_projects.scss */
 article.project section .column-12 .img-container .img-title {
-  -webkit-transform: translateY(3em);
-  -moz-transform: translateY(3em);
-  -ms-transform: translateY(3em);
-  -o-transform: translateY(3em);
-  transform: translateY(3em);
+  -webkit-transform: translateY(3.75em);
+  -moz-transform: translateY(3.75em);
+  -ms-transform: translateY(3.75em);
+  -o-transform: translateY(3.75em);
+  transform: translateY(3.75em);
   background-color: transparent;
   background-image: -webkit-linear-gradient(transparent, black);
   background-image: linear-gradient(transparent, black);

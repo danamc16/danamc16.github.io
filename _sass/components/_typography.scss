@@ -34,7 +34,7 @@ span {
 }
 
 .img-title {
-	font-size: 3em !important;
+	font-size: 2.5em !important;
 	text-shadow: $default-shadow;
 	p {
 		@include transform(translateY(-.5em));

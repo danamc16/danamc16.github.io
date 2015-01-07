@@ -13,16 +13,21 @@ section.portfolio {
 	.portfolio-row {
 		@include fill-parent();
 		@include row(table);
-		.column-6 {
-			@include span-columns(6);
+		.column-1 {
+			@include span-columns(1);
+		}
+		.column-4 {
+			@include span-columns(4);
 			padding: 1em;
 			position: relative;
 			.img-container {
 				overflow:hidden;
 				position: relative;
-				height: 25em;
-				background-color: gray;
+				height: 20em;
+				margin: 0 auto;
+				background-color: black;
 				img {
+					@include transition(all 0.5s ease-out);
 					position: absolute;
 					top: 50%;
 				    left: 50%;
@@ -39,15 +44,15 @@ section.portfolio {
 					left: 110%;
 				}
 				.img-title {
-					@include transform(translateY(3.5em));
+					@include transition(all 0.5s ease-out);
+					@include transform(translateY(3em));
 					z-index: 100;
 					position: absolute;
 					width: 100%;
 					text-align: center;
 				}
 				.img-description {
-					@include linear-gradient(rgba(0,0,0,0),  rgba(0,0,0,1));
-					@include transform(translateY(5em));
+					@include transform(translateY(6em));
 					@include transition(all 0.5s ease-out);
 					z-index: 100;
 					position: absolute;
@@ -57,9 +62,19 @@ section.portfolio {
 					text-align: right;				
 				}	
 			}
-			.img-container:hover .img-description {
-				@include transform(translateY(0em));
-				@include transition(all 0.5s ease-out);
+			.img-container:hover {
+				img {
+					@include transition(all 0.5s ease-out);
+					opacity:.4;	
+				}
+				.img-title {
+					@include transition(all 0.5s ease-out);
+					opacity:.7;	
+				}
+				.img-description {
+					@include transition(all 0.5s ease-out);
+					@include transform(translateY(.25em));		
+				}
 			}
 		}
 	}
