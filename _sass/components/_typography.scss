@@ -3,40 +3,86 @@
 
 // body { font-family: $primary-font, sans-serif; }
 
-// h1, h2, h3, h4, h5, h6 {
-// 	color: blue;
-// 	font-weight: 600;
-// 	font-style: italic;
-// 	line-height: 1.35;
-// }
+h1.page-title {
+	text-align:center;
+	font-weight: 300;
+	font-size: 4em; 	
+	width:100%;
+	padding-top:1.5em;
+	padding-bottom:.5em;
+	color:white;
+	text-shadow: $default-shadow;
+}
 
-// h1 {
-// 	font-size: $mobile-h1-font-size;
-// 	padding-bottom: 1rem;
+// Text for Navigation Bar
+nav {
+	font-family: $primary-font;	
+	.nav-name {
+		font-size:2em;
+	}
+	.nav-links li {
+		font-size: 1.25em;
+	}	
+}
 
-// 	@include media($tablet) {
-// 		font-size: $h1-font-size;
-// 	}
-// }
+// Text for Portfolio Squares
 
-// h2 {
-// 	font-size: $mobile-h2-font-size;
-// 	margin-bottom: 20px;
-// 	@include media($tablet) {
-// 		font-size: $h2-font-size;
-// 	}
-// }
+span {
+	font-family: $primary-font;
+	font-size: 1.25em;	
+	color: white;
+}
 
-// p {
-// 	font-family: $copy-font;
-// 	font-size: $mobile-main-font-size;
-// 	color: $dark-copy-color;
-// 	line-height: 1.824375em;
-// 	margin-bottom: 30px;
-// 	@include media($tablet) {
-// 		font-size: $main-font-size;
-// 	}
-// }
+.img-title {
+	font-size: 2.5em !important;
+	text-shadow: $default-shadow;
+	p {
+		@include transform(translateY(-.5em));
+		font-size:.5em;
+		text-align: center;
+		z-index: 100;
+	}
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.35;
+	font-family: $primary-font;	
+}
+
+h1 {
+	font-size: 2em;
+	padding-bottom: 1rem;
+	letter-spacing: .05em;
+
+	// @include media($tablet) {
+	// 	font-size: $h1-font-size;
+	// }
+}
+
+h2 {
+	font-size: 1.75em;
+	margin-bottom: 20px;
+	letter-spacing: .05em;
+	// @include media($tablet) {
+	// 	font-size: $h2-font-size;
+	// }
+}
+
+h3 {
+	margin-bottom: 5px;
+}
+
+p {
+	line-height: 1.824375em;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-family: $primary-font;
+	// @include media($tablet) {
+	// 	font-size: $main-font-size;
+	// }
+}
 
 a { text-decoration: none; }
 

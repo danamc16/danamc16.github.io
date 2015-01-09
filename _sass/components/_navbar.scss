@@ -1,0 +1,31 @@
+.nav-container {
+	position:fixed;
+	display: inline-block;
+	width:100%;
+	margin-top: 0;
+	z-index:1;
+	background-color: $backdrop; 	
+}
+
+.nav-name {
+	float:left;
+	display: inline-block;
+	padding: .5em;
+	letter-spacing: .05em;
+}
+
+.nav-primary {
+	width:100%;
+	ul:hover {
+		@include radial-gradient(#1e5799, #3dc3d1);
+	}
+	li {
+		float: right;
+		display: inline-block;
+		padding: 1em;
+		margin-right: .75em;
+		:visited {
+			color:black;
+		}
+	}
+}

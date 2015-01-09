@@ -1,0 +1,91 @@
+.body-portfolio {
+	background: url('/img/ceid.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.portfolio {
+	@include outer-container;
+	padding: 3em;
+	background-color: $backdrop;
+	.portfolio-row {
+		@include fill-parent();
+		@include row(table);
+		.column-1 {
+			@include span-columns(1);
+		}
+		.column-4 {
+			@include span-columns(4);
+			padding: 1em;
+			position: relative;
+			.img-container {
+				overflow:hidden;
+				position: relative;
+				height: 20em;
+				margin: 0 auto;
+				background-color: black;
+				img {
+					@include transition(all 0.5s ease-out);
+					position: absolute;
+					top: 50%;
+				    left: 50%;
+				    margin-right: -50%;
+				    transform: translate(-50%, -50%);
+				}
+				#aerospace {
+					left:150%;
+				}
+				#ds {
+					opacity:0.9;
+				}
+				#ycreate {
+					top:45%;
+					opacity:0.9;
+				}
+				#thoracostomy {
+					left: 110%;
+				}
+				.img-title {
+					@include transition(all 0.5s ease-out);
+					@include transform(translateY(3em));
+					z-index: 100;
+					position: absolute;
+					width: 100%;
+					text-align: center;
+				}
+				.img-description {
+					@include transform(translateY(6em));
+					@include transition(all 0.5s ease-out);
+					z-index: 100;
+					position: absolute;
+					width: 100%;
+					padding: 1em;
+					bottom: 0em;
+					text-align: right;				
+				}	
+			}
+			.img-container:hover {
+				img {
+					@include transition(all 0.5s ease-out);
+					opacity:.4;
+					&#ds {
+						opacity: .4;
+					}
+					&#ycreate {
+						opacity: .4;
+					}
+				}
+				.img-title {
+					@include transition(all 0.5s ease-out);
+					opacity:.7;	
+				}
+				.img-description {
+					@include transition(all 0.5s ease-out);
+					@include transform(translateY(.25em));		
+				}
+			}
+		}
+	}
+}

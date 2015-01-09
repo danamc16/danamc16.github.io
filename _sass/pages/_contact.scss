@@ -1,0 +1,28 @@
+.body-contact {
+	background: url('/img/highline.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.contact {
+	@include outer-container;
+	background-color: $backdrop;
+	padding: 3em;
+	h1 {
+		padding: .5em;
+		margin: 0 auto;
+		text-align:justify;
+		width: 80%;
+	}
+	.info {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 1em;
+		p {
+			text-align:center;
+		}
+	}
+}

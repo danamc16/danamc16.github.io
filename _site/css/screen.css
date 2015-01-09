@@ -85,12 +85,609 @@ html {
   box-sizing: inherit;
 }
 
-/* line 41, ../_sass/components/_typography.scss */
+/* line 6, ../_sass/components/_typography.scss */
+h1.page-title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 4em;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* line 18, ../_sass/components/_typography.scss */
+nav {
+  font-family: "Lato", sans-serif;
+}
+/* line 20, ../_sass/components/_typography.scss */
+nav .nav-name {
+  font-size: 2em;
+}
+/* line 23, ../_sass/components/_typography.scss */
+nav .nav-links li {
+  font-size: 1.25em;
+}
+
+/* line 30, ../_sass/components/_typography.scss */
+span {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+  color: white;
+}
+
+/* line 36, ../_sass/components/_typography.scss */
+.img-title {
+  font-size: 2.5em !important;
+  text-shadow: 2px 2px 2px black;
+}
+/* line 39, ../_sass/components/_typography.scss */
+.img-title p {
+  -webkit-transform: translateY(-0.5em);
+  -moz-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  -o-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+  font-size: .5em;
+  text-align: center;
+  z-index: 100;
+}
+
+/* line 48, ../_sass/components/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.35;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 54, ../_sass/components/_typography.scss */
+h1 {
+  font-size: 2em;
+  padding-bottom: 1rem;
+  letter-spacing: .05em;
+}
+
+/* line 64, ../_sass/components/_typography.scss */
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+  letter-spacing: .05em;
+}
+
+/* line 73, ../_sass/components/_typography.scss */
+h3 {
+  margin-bottom: 5px;
+}
+
+/* line 77, ../_sass/components/_typography.scss */
+p {
+  line-height: 1.824375em;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 87, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 43, ../_sass/components/_typography.scss */
+/* line 89, ../_sass/components/_typography.scss */
 i {
   font-style: italic;
+}
+
+/* line 1, ../_sass/components/_navbar.scss */
+.nav-container {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 10, ../_sass/components/_navbar.scss */
+.nav-name {
+  float: left;
+  display: inline-block;
+  padding: .5em;
+  letter-spacing: .05em;
+}
+
+/* line 17, ../_sass/components/_navbar.scss */
+.nav-primary {
+  width: 100%;
+}
+/* line 19, ../_sass/components/_navbar.scss */
+.nav-primary ul:hover {
+  background-color: #1e5799;
+  background-image: -webkit-radial-gradient(#1e5799, #3dc3d1);
+  background-image: radial-gradient(  #1e5799, #3dc3d1);
+}
+/* line 22, ../_sass/components/_navbar.scss */
+.nav-primary li {
+  float: right;
+  display: inline-block;
+  padding: 1em;
+  margin-right: .75em;
+}
+/* line 27, ../_sass/components/_navbar.scss */
+.nav-primary li :visited {
+  color: black;
+}
+
+/* line 1, ../_sass/components/_footer.scss */
+.footer {
+  height: 4em;
+}
+
+/* line 1, ../_sass/pages/_home.scss */
+.body-home {
+  background: url("/img/highline.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_home.scss */
+.aboutme {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+.aboutme:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, ../_sass/pages/_home.scss */
+.aboutme h1 {
+  text-align: center;
+  padding: .5em;
+  margin: 0 auto;
+  width: 90%;
+}
+/* line 19, ../_sass/pages/_home.scss */
+.aboutme p {
+  text-align: justify;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* line 1, ../_sass/pages/_resume.scss */
+.body-resume {
+  background: url("/img/yale.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_resume.scss */
+section.experience {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+section.experience:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, ../_sass/pages/_resume.scss */
+section.experience .experience-row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 16, ../_sass/pages/_resume.scss */
+section.experience .experience-row .column-4 {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 2.35765%;
+}
+/* line 20, ../_sass/pages/_resume.scss */
+section.experience .experience-row .column-4-skills {
+  display: table-cell;
+  width: 100%;
+  padding: 2.35765%;
+}
+/* line 23, ../_sass/pages/_resume.scss */
+section.experience .experience-row .column-4-skills h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 27, ../_sass/pages/_resume.scss */
+section.experience .experience-row .column-4-skills li {
+  line-height: 1.824375em;
+  padding-left: 3em;
+  font-family: "Lato", sans-serif;
+}
+/* line 33, ../_sass/pages/_resume.scss */
+section.experience .experience-row .column-8 {
+  display: table-cell;
+  width: 100%;
+  padding: 2.35765%;
+}
+
+/* line 1, ../_sass/pages/_portfolio.scss */
+.body-portfolio {
+  background: url("/img/ceid.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_portfolio.scss */
+section.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+section.portfolio:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 16, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-1 {
+  display: table-cell;
+  width: 16.66667%;
+}
+/* line 19, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 {
+  display: table-cell;
+  width: 66.66667%;
+  padding: 1em;
+  position: relative;
+}
+/* line 23, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+  margin: 0 auto;
+  background-color: black;
+}
+/* line 29, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container img {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 37, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #aerospace {
+  left: 150%;
+}
+/* line 40, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #ds {
+  opacity: 0.9;
+}
+/* line 43, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #ycreate {
+  top: 45%;
+  opacity: 0.9;
+}
+/* line 47, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #thoracostomy {
+  left: 110%;
+}
+/* line 50, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container .img-title {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateY(3em);
+  -moz-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  -o-transform: translateY(3em);
+  transform: translateY(3em);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 58, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container .img-description {
+  -webkit-transform: translateY(6em);
+  -moz-transform: translateY(6em);
+  -ms-transform: translateY(6em);
+  -o-transform: translateY(6em);
+  transform: translateY(6em);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  bottom: 0em;
+  text-align: right;
+}
+/* line 70, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: .4;
+}
+/* line 73, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img#ds {
+  opacity: .4;
+}
+/* line 76, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img#ycreate {
+  opacity: .4;
+}
+/* line 80, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover .img-title {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: .7;
+}
+/* line 84, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateY(0.25em);
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -o-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+/* line 1, ../_sass/pages/_projects.scss */
+article.project {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+article.project:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../_sass/pages/_projects.scss */
+article.project section {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 8, ../_sass/pages/_projects.scss */
+article.project section .column-12 {
+  display: table-cell;
+  width: 200%;
+  padding: 2.35765%;
+  position: relative;
+}
+/* line 12, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container {
+  overflow: hidden;
+  position: relative;
+  height: 15em;
+  background-color: gray;
+}
+/* line 17, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* line 26, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container #peabody {
+  top: 60%;
+}
+/* line 29, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container #rocket {
+  top: 70%;
+}
+/* line 32, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container #thoracostomy {
+  top: 65%;
+}
+/* line 35, ../_sass/pages/_projects.scss */
+article.project section .column-12 .img-container .img-title {
+  -webkit-transform: translateY(3.75em);
+  -moz-transform: translateY(3.75em);
+  -ms-transform: translateY(3.75em);
+  -o-transform: translateY(3.75em);
+  transform: translateY(3.75em);
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(transparent, black);
+  background-image: linear-gradient(transparent, black);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* line 47, ../_sass/pages/_projects.scss */
+article.project section.info {
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+/* line 53, ../_sass/pages/_projects.scss */
+article.project section.info .img-container {
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  height: 25em;
+  margin-bottom: 1em;
+}
+/* line 59, ../_sass/pages/_projects.scss */
+article.project section.info .img-container img:not(#aerospace) {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+  width: 100%;
+}
+/* line 64, ../_sass/pages/_projects.scss */
+article.project section.info .img-container .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(100%, 50%);
+  -moz-transform: translate(100%, 50%);
+  -ms-transform: translate(100%, 50%);
+  -o-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+  display: inline-block;
+  width: 40%;
+  float: right;
+  padding: 1em;
+}
+/* line 72, ../_sass/pages/_projects.scss */
+article.project section.info .img-container#nugo {
+  height: 20em;
+}
+/* line 77, ../_sass/pages/_projects.scss */
+article.project section.info .img-container:hover img {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: .4;
+}
+/* line 81, ../_sass/pages/_projects.scss */
+article.project section.info .img-container:hover .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(0%, 50%);
+  -moz-transform: translate(0%, 50%);
+  -ms-transform: translate(0%, 50%);
+  -o-transform: translate(0%, 50%);
+  transform: translate(0%, 50%);
+}
+/* line 87, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 90, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 {
+  display: table-cell;
+  width: 100%;
+  padding: .5em;
+}
+/* line 93, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 #aerospace {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+  height: 100%;
+  left: -10%;
+}
+/* line 99, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 #payload {
+  top: -5%;
+}
+/* line 102, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 .img-description-grid {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(100%, 30%);
+  -moz-transform: translate(100%, 30%);
+  -ms-transform: translate(100%, 30%);
+  -o-transform: translate(100%, 30%);
+  transform: translate(100%, 30%);
+  display: inline-block;
+  width: 70%;
+  float: right;
+  padding: 1em;
+}
+/* line 111, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 .img-container:hover > .img-description-grid {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(0%, 30%);
+  -moz-transform: translate(0%, 30%);
+  -ms-transform: translate(0%, 30%);
+  -o-transform: translate(0%, 30%);
+  transform: translate(0%, 30%);
+}
+
+/* line 1, ../_sass/pages/_contact.scss */
+.body-contact {
+  background: url("/img/highline.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, ../_sass/pages/_contact.scss */
+.contact {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3em;
+}
+/* line 15, ../_sass/bourbon/addons/_clearfix.scss */
+.contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, ../_sass/pages/_contact.scss */
+.contact h1 {
+  padding: .5em;
+  margin: 0 auto;
+  text-align: justify;
+  width: 80%;
+}
+/* line 19, ../_sass/pages/_contact.scss */
+.contact .info {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+/* line 24, ../_sass/pages/_contact.scss */
+.contact .info p {
+  text-align: center;
 }

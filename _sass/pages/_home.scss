@@ -1,0 +1,25 @@
+.body-home {
+	background: url('/img/highline.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.aboutme {
+	@include outer-container;
+	padding: 3em;
+	background-color: $backdrop;
+	h1 {
+		text-align: center;
+		padding: .5em;
+		margin: 0 auto;	
+		width: 90%
+	}
+	p {
+		text-align: justify;
+		width: 75%;
+		margin: 0 auto;
+		padding: 1em;
+	}
+}

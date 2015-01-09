@@ -5,4 +5,12 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" >
     </head>
-    <body>
+    {% if page.url == "/" %}
+    	<body class="body-home">
+    {% elsif page.url == "/resume/" %}
+    	<body class="body-resume">
+    {% elsif page.url == "/contact/" %}
+    	<body class="body-contact">
+    {% else %}
+    	<body class="body-portfolio">
+    {% endif %}
