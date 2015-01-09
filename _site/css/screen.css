@@ -387,14 +387,19 @@ section.portfolio .portfolio-row .column-4 .img-container #aerospace {
   left: 150%;
 }
 /* line 40, ../_sass/pages/_portfolio.scss */
-section.portfolio .portfolio-row .column-4 .img-container #ycreate {
-  top: 45%;
+section.portfolio .portfolio-row .column-4 .img-container #ds {
+  opacity: 0.9;
 }
 /* line 43, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container #ycreate {
+  top: 45%;
+  opacity: 0.9;
+}
+/* line 47, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container #thoracostomy {
   left: 110%;
 }
-/* line 46, ../_sass/pages/_portfolio.scss */
+/* line 50, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container .img-title {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -409,7 +414,7 @@ section.portfolio .portfolio-row .column-4 .img-container .img-title {
   width: 100%;
   text-align: center;
 }
-/* line 54, ../_sass/pages/_portfolio.scss */
+/* line 58, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container .img-description {
   -webkit-transform: translateY(6em);
   -moz-transform: translateY(6em);
@@ -426,21 +431,29 @@ section.portfolio .portfolio-row .column-4 .img-container .img-description {
   bottom: 0em;
   text-align: right;
 }
-/* line 66, ../_sass/pages/_portfolio.scss */
+/* line 70, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container:hover img {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   opacity: .4;
 }
-/* line 70, ../_sass/pages/_portfolio.scss */
+/* line 73, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img#ds {
+  opacity: .4;
+}
+/* line 76, ../_sass/pages/_portfolio.scss */
+section.portfolio .portfolio-row .column-4 .img-container:hover img#ycreate {
+  opacity: .4;
+}
+/* line 80, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container:hover .img-title {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   opacity: .7;
 }
-/* line 74, ../_sass/pages/_portfolio.scss */
+/* line 84, ../_sass/pages/_portfolio.scss */
 section.portfolio .portfolio-row .column-4 .img-container:hover .img-description {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -528,7 +541,113 @@ article.project section.info {
   padding-right: 3em;
   padding-left: 3em;
   padding-top: 1em;
+  padding-bottom: 1em;
   text-align: justify;
+}
+/* line 53, ../_sass/pages/_projects.scss */
+article.project section.info .img-container {
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  height: 25em;
+  margin-bottom: 1em;
+}
+/* line 59, ../_sass/pages/_projects.scss */
+article.project section.info .img-container img:not(#aerospace) {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+  width: 100%;
+}
+/* line 64, ../_sass/pages/_projects.scss */
+article.project section.info .img-container .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(100%, 50%);
+  -moz-transform: translate(100%, 50%);
+  -ms-transform: translate(100%, 50%);
+  -o-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+  display: inline-block;
+  width: 40%;
+  float: right;
+  padding: 1em;
+}
+/* line 72, ../_sass/pages/_projects.scss */
+article.project section.info .img-container#nugo {
+  height: 20em;
+}
+/* line 77, ../_sass/pages/_projects.scss */
+article.project section.info .img-container:hover img {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: .4;
+}
+/* line 81, ../_sass/pages/_projects.scss */
+article.project section.info .img-container:hover .img-description {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(0%, 50%);
+  -moz-transform: translate(0%, 50%);
+  -ms-transform: translate(0%, 50%);
+  -o-transform: translate(0%, 50%);
+  transform: translate(0%, 50%);
+}
+/* line 87, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* line 90, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 {
+  display: table-cell;
+  width: 100%;
+  padding: .5em;
+}
+/* line 93, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 #aerospace {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: absolute;
+  height: 100%;
+  left: -10%;
+}
+/* line 99, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 #payload {
+  top: -5%;
+}
+/* line 102, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 .img-description-grid {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(100%, 30%);
+  -moz-transform: translate(100%, 30%);
+  -ms-transform: translate(100%, 30%);
+  -o-transform: translate(100%, 30%);
+  transform: translate(100%, 30%);
+  display: inline-block;
+  width: 70%;
+  float: right;
+  padding: 1em;
+}
+/* line 111, ../_sass/pages/_projects.scss */
+article.project section.info .img-grid .column-6 .img-container:hover > .img-description-grid {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translate(0%, 30%);
+  -moz-transform: translate(0%, 30%);
+  -ms-transform: translate(0%, 30%);
+  -o-transform: translate(0%, 30%);
+  transform: translate(0%, 30%);
 }
 
 /* line 1, ../_sass/pages/_contact.scss */

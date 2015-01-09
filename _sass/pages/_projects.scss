@@ -48,6 +48,71 @@ article.project {
 		padding-right: 3em;
 		padding-left: 3em;
 		padding-top: 1em;
-		text-align: justify;	
+		padding-bottom: 1em;
+		text-align: justify;
+		.img-container {
+			overflow:hidden;
+			position: relative;
+			background-color: black;
+			height: 25em;
+			margin-bottom: 1em;
+			img:not(#aerospace,) {
+				@include transition(all 0.5s ease-out);
+				position:absolute;
+				width: 100%;
+			}
+			.img-description {
+				@include transition(all 0.5s ease-out);
+				@include transform(translate(100%,50%));
+				display: inline-block;
+				width: 40%;
+				float: right;
+				padding: 1em;
+			}
+			&#nugo {
+				height:20em;
+			}			
+		}
+		.img-container:hover {
+			img {
+				@include transition(all 0.5s ease-out);
+				opacity:.4;	
+			}
+			.img-description {
+				@include transition(all 0.5s ease-out);
+				@include transform(translate(0%,50%));
+			}
+		}
+
+		.img-grid {
+			@include fill-parent();
+			@include row(table);
+			.column-6 {
+				@include span-columns(6);
+				padding: .5em;
+				#aerospace {
+					@include transition(all 0.5s ease-out);
+					position:absolute;
+					height:100%;
+					left:-10%;
+				}
+				#payload {
+					top: -5%;
+				}
+				.img-description-grid {
+					@include transition(all 0.5s ease-out);
+					@include transform(translate(100%,30%));
+					display: inline-block;
+					width: 70%;
+					float: right;
+					padding: 1em;
+				}
+
+				.img-container:hover > .img-description-grid {
+					@include transition(all 0.5s ease-out);
+					@include transform(translate(0%,30%));
+				}
+			}
+		}
 	}
 }

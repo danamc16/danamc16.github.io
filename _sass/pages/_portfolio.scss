@@ -37,8 +37,12 @@ section.portfolio {
 				#aerospace {
 					left:150%;
 				}
+				#ds {
+					opacity:0.9;
+				}
 				#ycreate {
 					top:45%;
+					opacity:0.9;
 				}
 				#thoracostomy {
 					left: 110%;
@@ -65,7 +69,13 @@ section.portfolio {
 			.img-container:hover {
 				img {
 					@include transition(all 0.5s ease-out);
-					opacity:.4;	
+					opacity:.4;
+					&#ds {
+						opacity: .4;
+					}
+					&#ycreate {
+						opacity: .4;
+					}
 				}
 				.img-title {
 					@include transition(all 0.5s ease-out);
