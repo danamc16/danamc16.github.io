@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory - app/sass
+
+Backtrace:
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:482:in `read'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:293:in `watch'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/plugin.rb:108:in `method_missing'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:370:in `watch_or_update'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/bin/sass:23:in `load'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/bin/sass:23:in `<main>'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/bin/ruby_executable_hooks:15:in `eval'
+/home/dana/.rvm/gems/ruby-1.9.3-p484/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - app/sass"; }
